@@ -1,0 +1,9 @@
+true
+angular|lib/angular.dart
+angular_router|lib/angular_router.dart
+http|lib/http.dart
+mobile_hive|lib/app_component.template.dart
+mobile_hive|lib/in_memory_data_service.dart
+mobile_hive|web/main.template.dart
+
+

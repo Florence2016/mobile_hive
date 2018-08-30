@@ -1,0 +1,11 @@
+true
+angular_components|lib/material_list/material_list.dart
+mobile_hive|lib/src/app.dart
+mobile_hive|lib/src/route/route_paths.dart
+angular|lib/angular.dart
+mobile_hive|lib/src/mobile_component.dart
+mobile_hive|lib/src/mobile_service.dart
+angular_router|lib/angular_router.dart
+angular_components|lib/material_icon/material_icon.dart
+
+

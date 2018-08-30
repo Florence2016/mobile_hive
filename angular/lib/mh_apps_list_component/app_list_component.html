@@ -1,0 +1,39 @@
+<h1>{{title}}</h1>
+<div>
+    <label>App name:</label> <input #appName />
+    <button (click)="add(appName.value); appName.value=''">Add</button>
+    <p class="error" *ngIf="errorMessage != null">{{errorMessage}}</p>
+</div>
+<div *ngIf="selected != null">
+    <h2>{{selected.name}} app</h2>
+</div>
+<material-list>
+        <table>
+            <thead>
+            <tr>
+                <th>App ID</th><th>App Name</th><th>Action</th>
+            </tr>
+            </thead>
+            <tbody class="appsList">
+            <tr *ngFor="let app of appsList"
+                [class.selected]="app === selected"
+                (click)="onSelect(app)">
+                <td>
+                    {{app.id}}
+                </td>
+                <td>
+                   {{app.name}}
+                </td>
+                <td>
+                    <material-icon icon="create" class="edit"
+                                   (click)="gotoDetail();"></material-icon>
+                    <material-icon icon="delete" class="delete"
+                                   (click)="delete(app); $event.stopPropagation()"></material-icon>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+</material-list>
+<my-mobile-app [app]="selected"></my-mobile-app>
+

@@ -1,0 +1,8 @@
+false
+angular|lib/angular.dart
+angular|lib/src/runtime.dart
+meta|lib/meta.dart
+angular_router|lib/src/route_path.dart
+angular_router|lib/src/url.dart
+
+

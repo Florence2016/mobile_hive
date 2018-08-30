@@ -1,0 +1,4 @@
+library asset_mobile_hive_web_assets_bower_components_ckeditor_plugins_autocomplete_skins_default.css.shim.dart;
+
+
+final List<dynamic> styles = ['.cke_autocomplete_panel._ngcontent-%ID%{position:absolute;display:none;box-sizing:border-box;width:200px;max-height:300px;overflow:auto;padding:0;margin:0;list-style:none;background:#FFF;border:1px solid #b6b6b6;border-bottom-color:#999;border-radius:3px;font:12px Arial, Helvetica, Tahoma, Verdana, Sans-Serif;}.cke_autocomplete_opened._ngcontent-%ID%{display:block;}.cke_autocomplete_panel._ngcontent-%ID% > li._ngcontent-%ID%{padding:5px;}.cke_autocomplete_panel._ngcontent-%ID% > li:hover._ngcontent-%ID%{cursor:pointer;}.cke_autocomplete_selected._ngcontent-%ID%,.cke_autocomplete_panel._ngcontent-%ID% > li:hover._ngcontent-%ID%{background-color:#EFF0EF;}'];
