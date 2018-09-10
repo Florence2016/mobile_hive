@@ -1,9 +1,9 @@
 class Manage{
-  final int ma_id;
-  String ma_name;
-  Manage(this.ma_id, this.ma_name);
+  final int id;
+  String name;
+  Manage(this.id, this.name);
   factory Manage.fromJson(Map<String, dynamic> manage) =>
-      Manage(_toInt(manage['ma_id']), manage['ma_name']);
-  Map toJson() => {'ma_id': ma_id, 'ma_name': ma_name};
+      Manage(_toInt(manage['id']), manage['hive']);
+  Map toJson() => {'id': id, 'hive': name};
 }
-int _toInt(ma_id) => ma_id is int ? ma_id : int.parse(ma_id);
+int _toInt(id) => id is int ? id : int.parse(id);

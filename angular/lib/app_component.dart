@@ -2,6 +2,7 @@
 
 import 'package:http/browser_client.dart';
 import 'package:mobile_hive/src/app_manage_service.dart';
+import 'package:mobile_hive/src/mh_footer/footer_component.dart';
 import 'package:mobile_hive/src/mh_header/header_component.dart';
 import 'package:mobile_hive/src/route/route_paths.dart';
 import 'package:mobile_hive/src/route/routes.dart';
@@ -25,7 +26,8 @@ import 'package:angular_components/angular_components.dart';
   materialInputDirectives,
   MaterialYesNoButtonsComponent,
   ModalComponent,
-  NgModel,routerDirectives,HeaderComponent],
+  NgModel,routerDirectives,HeaderComponent,
+  FooterComponent],
   providers: [materialProviders, ClassProvider(MobileService)],
   exports: [RoutePaths, Routes],
 )

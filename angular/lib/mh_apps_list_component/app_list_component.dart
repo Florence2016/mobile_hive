@@ -1,12 +1,11 @@
 import 'dart:async';
-import 'package:angular_components/material_list/material_list.dart';
 import 'package:mobile_hive/src/app.dart';
 import 'package:mobile_hive/src/route/route_paths.dart';
 import 'package:angular/angular.dart';
 import 'package:mobile_hive/src/mobile_component.dart';
 import 'package:mobile_hive/src/mobile_service.dart';
 import 'package:angular_router/angular_router.dart';
-import 'package:angular_components/material_icon/material_icon.dart';
+import 'package:angular_components/angular_components.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
 

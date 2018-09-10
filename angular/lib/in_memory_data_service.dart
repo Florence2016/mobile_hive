@@ -43,9 +43,7 @@ class InMemoryDataService extends MockClient {
         break;
       case 'POST':
         var name = json.decode(request.body)['name'];
-        var newApp = App(_nextId++, name);
-        _applicationDb.add(newApp);
-        data = newApp;
+
         break;
       case 'PUT':
         var appChanges = App.fromJson(json.decode(request.body));

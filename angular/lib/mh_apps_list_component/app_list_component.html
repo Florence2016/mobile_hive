@@ -1,29 +1,40 @@
-<h1>{{title}}</h1>
+
 <div>
     <label>App name:</label> <input #appName />
-    <button (click)="add(appName.value); appName.value=''">Add</button>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+            (click)="add(appName.value); appName.value=''">
+        <i class="material-icons">add</i>
+    </button>
     <p class="error" *ngIf="errorMessage != null">{{errorMessage}}</p>
 </div>
 <div *ngIf="selected != null">
-    <h2>{{selected.name}} app</h2>
+    <h3>{{selected.name}}</h3>
 </div>
 <material-list>
-        <table>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
             <thead>
             <tr>
-                <th>App ID</th><th>App Name</th><th>Action</th>
+                <th class="mdl-data-table__cell--non-numeric">App ID</th>
+                <th class="mdl-data-table__cell--non-numeric">App Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Description</th>
+                <th class="mdl-data-table__cell--non-numeric">Bundle</th>
+                <th class="mdl-data-table__cell--non-numeric">Users</th>
+                <th class="mdl-data-table__cell--non-numeric">Reviews</th>
+                <th class="mdl-data-table__cell--non-numeric">Ratings</th>
+                <th class="mdl-data-table__cell--non-numeric">Action</th>
             </tr>
             </thead>
             <tbody class="appsList">
             <tr *ngFor="let app of appsList"
                 [class.selected]="app === selected"
                 (click)="onSelect(app)">
-                <td>
-                    {{app.id}}
-                </td>
-                <td>
-                   {{app.name}}
-                </td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.id}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.description}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.bundle}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.users}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.reviews}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{app.ratings}}</td>
                 <td>
                     <material-icon icon="create" class="edit"
                                    (click)="gotoDetail();"></material-icon>

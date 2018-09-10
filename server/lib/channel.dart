@@ -1,3 +1,5 @@
+import 'package:server/controller/hiveapps_controller.dart';
+
 import 'controller/mobileapps_controller.dart';
 import 'server.dart';
 /// This type initializes an application.
@@ -40,6 +42,10 @@ class ServerChannel extends ApplicationChannel {
 
     // Prefer to use `link` instead of `linkFunction`.
     // See: https://aqueduct.io/docs/http/request_controller/
+    router
+        .route('/hiveapps/[:id]')
+        .link(() => HiveAppsController(context));
+
     router
         .route('/mobileapps/[:id]')
         .link(() => MobileAppController(context));

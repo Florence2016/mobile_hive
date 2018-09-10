@@ -1,28 +1,26 @@
-<h1>Management</h1>
-
 <ul class="manageAppList">
     <li *ngFor="let manage of manageAppList"
         [class.selected]="manage === selected"
         (click)="onSelect(manage)">
 <section>
-    <material-expansionpanel-set>
+
         <material-expansionpanel autoDismissable
                                  expandIcon="edit"
                                  name="BeeStripe App">
-            <span value >{{manage.ma_name}}</span>
+            <span value >{{manage.name}}</span>
 
             <div>
                 <span>Mobile Info:</span>
                 <div *ngIf="selected != null">
-                    <div><label>id: </label>{{selected.ma_id}}</div>
+                    <div><label>id: </label>{{selected.id}}</div>
                     <div>
                         <label>name: </label>
-                        <input [(ngModel)]="selected.ma_name" placeholder="ma_name">
+                        <input [(ngModel)]="selected.name" placeholder="name">
                     </div>
                 </div>
             </div>
         </material-expansionpanel>
-    </material-expansionpanel-set>
+
 </section>
     </li>
 </ul>
